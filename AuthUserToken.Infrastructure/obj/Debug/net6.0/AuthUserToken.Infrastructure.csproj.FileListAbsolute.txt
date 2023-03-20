@@ -1,0 +1,17 @@
+C:\Users\paulo.filho\Desktop\Individuais\AuthUserToken.API\AuthUserToken.Infrastructure\bin\Debug\net6.0\AuthUserToken.Infrastructure.deps.json
+C:\Users\paulo.filho\Desktop\Individuais\AuthUserToken.API\AuthUserToken.Infrastructure\bin\Debug\net6.0\AuthUserToken.Infrastructure.runtimeconfig.json
+C:\Users\paulo.filho\Desktop\Individuais\AuthUserToken.API\AuthUserToken.Infrastructure\bin\Debug\net6.0\AuthUserToken.Infrastructure.dll
+C:\Users\paulo.filho\Desktop\Individuais\AuthUserToken.API\AuthUserToken.Infrastructure\bin\Debug\net6.0\AuthUserToken.Infrastructure.pdb
+C:\Users\paulo.filho\Desktop\Individuais\AuthUserToken.API\AuthUserToken.Infrastructure\bin\Debug\net6.0\AuthUserToken.Domain.dll
+C:\Users\paulo.filho\Desktop\Individuais\AuthUserToken.API\AuthUserToken.Infrastructure\bin\Debug\net6.0\AuthUserToken.Domain.pdb
+C:\Users\paulo.filho\Desktop\Individuais\AuthUserToken.API\AuthUserToken.Infrastructure\obj\Debug\net6.0\AuthUserToken.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\paulo.filho\Desktop\Individuais\AuthUserToken.API\AuthUserToken.Infrastructure\obj\Debug\net6.0\AuthUserToken.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\paulo.filho\Desktop\Individuais\AuthUserToken.API\AuthUserToken.Infrastructure\obj\Debug\net6.0\AuthUserToken.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\paulo.filho\Desktop\Individuais\AuthUserToken.API\AuthUserToken.Infrastructure\obj\Debug\net6.0\AuthUserToken.Infrastructure.AssemblyInfo.cs
+C:\Users\paulo.filho\Desktop\Individuais\AuthUserToken.API\AuthUserToken.Infrastructure\obj\Debug\net6.0\AuthUserToken.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\paulo.filho\Desktop\Individuais\AuthUserToken.API\AuthUserToken.Infrastructure\obj\Debug\net6.0\AuthUserToken.Infrastructure.csproj.CopyComplete
+C:\Users\paulo.filho\Desktop\Individuais\AuthUserToken.API\AuthUserToken.Infrastructure\obj\Debug\net6.0\AuthUserToken.Infrastructure.dll
+C:\Users\paulo.filho\Desktop\Individuais\AuthUserToken.API\AuthUserToken.Infrastructure\obj\Debug\net6.0\refint\AuthUserToken.Infrastructure.dll
+C:\Users\paulo.filho\Desktop\Individuais\AuthUserToken.API\AuthUserToken.Infrastructure\obj\Debug\net6.0\AuthUserToken.Infrastructure.pdb
+C:\Users\paulo.filho\Desktop\Individuais\AuthUserToken.API\AuthUserToken.Infrastructure\obj\Debug\net6.0\AuthUserToken.Infrastructure.genruntimeconfig.cache
+C:\Users\paulo.filho\Desktop\Individuais\AuthUserToken.API\AuthUserToken.Infrastructure\obj\Debug\net6.0\ref\AuthUserToken.Infrastructure.dll

@@ -4,6 +4,101 @@
     "C:\\Users\\paulo.filho\\Desktop\\Individuais\\AuthUserToken.API\\AuthUserToken.Infrastructure\\AuthUserToken.Infrastructure.csproj": {}
   },
   "projects": {
+    "C:\\Users\\paulo.filho\\Desktop\\Individuais\\AuthUserToken.API\\AuthUserToken.Domain\\AuthUserToken.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\paulo.filho\\Desktop\\Individuais\\AuthUserToken.API\\AuthUserToken.Domain\\AuthUserToken.Domain.csproj",
+        "projectName": "AuthUserToken.Domain",
+        "projectPath": "C:\\Users\\paulo.filho\\Desktop\\Individuais\\AuthUserToken.API\\AuthUserToken.Domain\\AuthUserToken.Domain.csproj",
+        "packagesPath": "C:\\Users\\paulo.filho\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\paulo.filho\\Desktop\\Individuais\\AuthUserToken.API\\AuthUserToken.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\paulo.filho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/geniallabs/_packaging/geniallabs/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Grpc.Core.Api": {
+              "target": "Package",
+              "version": "[2.52.0, )"
+            },
+            "Microsoft.AspNet.WebApi.Core": {
+              "target": "Package",
+              "version": "[5.2.9, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\paulo.filho\\Desktop\\Individuais\\AuthUserToken.API\\AuthUserToken.Infrastructure\\AuthUserToken.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -29,7 +124,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\paulo.filho\\Desktop\\Individuais\\AuthUserToken.API\\AuthUserToken.Domain\\AuthUserToken.Domain.csproj": {
+                "projectPath": "C:\\Users\\paulo.filho\\Desktop\\Individuais\\AuthUserToken.API\\AuthUserToken.Domain\\AuthUserToken.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
