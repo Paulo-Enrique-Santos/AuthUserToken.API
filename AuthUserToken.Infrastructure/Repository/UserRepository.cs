@@ -20,7 +20,7 @@ namespace AuthUserToken.Infrastructure.Repository
             _appDbContext = appDbContext;
         }
 
-        public async Task<User> LoginUserAsync(UserLoginRequest userLoginRequest)
+        public async Task<User?> LoginUserAsync(UserLoginRequest userLoginRequest)
         {
             return await _appDbContext.User.FirstOrDefaultAsync(x => x.Email.Equals(userLoginRequest.Email) && x.Password.Equals(userLoginRequest.Password));
         }
@@ -32,7 +32,7 @@ namespace AuthUserToken.Infrastructure.Repository
             return user;
         }
 
-        public async Task<User> GetUserByIdAsync(int idUser)
+        public async Task<User?> GetUserByIdAsync(int idUser)
         {
             return await _appDbContext.User.FirstOrDefaultAsync(x => x.IdUser == idUser);
         }
@@ -44,14 +44,21 @@ namespace AuthUserToken.Infrastructure.Repository
             return user;
         }
 
-        public async Task<User> GetUserByEmailAsync(string email)
+        public async Task<User?> GetUserByEmailAsync(string email)
         {
             return await _appDbContext.User.FirstOrDefaultAsync(x => x.Email.Equals(email));
         }
 
-        public async Task<User> GetUserByNickNameAsync(string nickName)
+        public async Task<User?> GetUserByNickNameAsync(string nickName)
         {
             return await _appDbContext.User.FirstOrDefaultAsync(x => x.NickName.Equals(nickName));
+        }
+
+        public async Task<User> DeleteUserAsync(User user)
+        {
+            _appDbContext.User.Remove(user);
+            await _appDbContext.SaveChangesAsync();
+            return user;
         }
     }
 }

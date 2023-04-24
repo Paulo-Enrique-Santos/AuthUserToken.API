@@ -89,3 +89,11 @@ C:\Users\paulo.filho\Desktop\Individuais\AuthUserToken.API\AuthUserToken.API\bin
 C:\Users\paulo.filho\Desktop\Individuais\AuthUserToken.API\AuthUserToken.API\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
 C:\Users\paulo.filho\Desktop\Individuais\AuthUserToken.API\AuthUserToken.API\bin\Debug\net6.0\AuthUserToken.API.xml
 C:\Users\paulo.filho\Desktop\Individuais\AuthUserToken.API\AuthUserToken.API\obj\Debug\net6.0\AuthUserToken.API.xml
+C:\Users\paulo.filho\Desktop\Individuais\AuthUserToken.API\AuthUserToken.API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\paulo.filho\Desktop\Individuais\AuthUserToken.API\AuthUserToken.API\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\paulo.filho\Desktop\Individuais\AuthUserToken.API\AuthUserToken.API\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\paulo.filho\Desktop\Individuais\AuthUserToken.API\AuthUserToken.API\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\paulo.filho\Desktop\Individuais\AuthUserToken.API\AuthUserToken.API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\paulo.filho\Desktop\Individuais\AuthUserToken.API\AuthUserToken.API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\paulo.filho\Desktop\Individuais\AuthUserToken.API\AuthUserToken.API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\paulo.filho\Desktop\Individuais\AuthUserToken.API\AuthUserToken.API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll

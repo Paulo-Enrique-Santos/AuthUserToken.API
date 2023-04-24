@@ -1,6 +1,8 @@
-﻿using AuthUserToken.Domain.Interface.Repository;
+﻿using AuthUserToken.Domain.Interface.Authentication;
+using AuthUserToken.Domain.Interface.Repository;
 using AuthUserToken.Domain.Interface.Service;
 using AuthUserToken.Domain.Serivce;
+using AuthUserToken.Infrastructure.Authentication;
 using AuthUserToken.Infrastructure.Context;
 using AuthUserToken.Infrastructure.Repository;
 using Microsoft.EntityFrameworkCore;
@@ -17,6 +19,7 @@ namespace AuthUserToken.Infrastructure.DependencyInjection
                 options.UseSqlite(configuration.GetConnectionString("ConnectionSqlite")));
 
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<ITokenGenerator, TokenGenerator>();
 
             return services;
         }

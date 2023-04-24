@@ -6,12 +6,27 @@
     <members>
         <member name="M:AuthUserToken.API.Controllers.UserController.RegisterUser(AuthUserToken.Domain.Model.Request.UserRegisterRequest)">
             <summary>
-            Cadastrar um novo usuário
+            Cadastra um novo usuário
+            </summary>
+        </member>
+        <member name="M:AuthUserToken.API.Controllers.UserController.LoginUser(AuthUserToken.Domain.Model.Request.UserLoginRequest)">
+            <summary>
+            Validar login
             </summary>
         </member>
         <member name="M:AuthUserToken.API.Controllers.UserController.GetUserById(System.Int32)">
             <summary>
-            Cadastrar um novo usuário
+            Busca um usuário por id
+            </summary>
+        </member>
+        <member name="M:AuthUserToken.API.Controllers.UserController.UpdateUserPassword(System.Int32,System.String)">
+            <summary>
+            Atualiza a senha de um usuário
+            </summary>
+        </member>
+        <member name="M:AuthUserToken.API.Controllers.UserController.DeleteUserById(System.Int32)">
+            <summary>
+            Deleta um usuário por id
             </summary>
         </member>
     </members>
