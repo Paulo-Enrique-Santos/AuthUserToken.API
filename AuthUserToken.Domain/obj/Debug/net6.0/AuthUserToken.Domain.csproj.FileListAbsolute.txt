@@ -12,3 +12,17 @@ C:\Users\paulo.filho\Desktop\Individuais\AuthUserToken.API\AuthUserToken.Domain\
 C:\Users\paulo.filho\Desktop\Individuais\AuthUserToken.API\AuthUserToken.Domain\obj\Debug\net6.0\AuthUserToken.Domain.pdb
 C:\Users\paulo.filho\Desktop\Individuais\AuthUserToken.API\AuthUserToken.Domain\obj\Debug\net6.0\AuthUserToken.Domain.genruntimeconfig.cache
 C:\Users\paulo.filho\Desktop\Individuais\AuthUserToken.API\AuthUserToken.Domain\obj\Debug\net6.0\ref\AuthUserToken.Domain.dll
+C:\Individuais\AuthUserToken.API\AuthUserToken.Domain\bin\Debug\net6.0\AuthUserToken.Domain.deps.json
+C:\Individuais\AuthUserToken.API\AuthUserToken.Domain\bin\Debug\net6.0\AuthUserToken.Domain.runtimeconfig.json
+C:\Individuais\AuthUserToken.API\AuthUserToken.Domain\bin\Debug\net6.0\AuthUserToken.Domain.dll
+C:\Individuais\AuthUserToken.API\AuthUserToken.Domain\bin\Debug\net6.0\AuthUserToken.Domain.pdb
+C:\Individuais\AuthUserToken.API\AuthUserToken.Domain\obj\Debug\net6.0\AuthUserToken.Domain.csproj.AssemblyReference.cache
+C:\Individuais\AuthUserToken.API\AuthUserToken.Domain\obj\Debug\net6.0\AuthUserToken.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Individuais\AuthUserToken.API\AuthUserToken.Domain\obj\Debug\net6.0\AuthUserToken.Domain.AssemblyInfoInputs.cache
+C:\Individuais\AuthUserToken.API\AuthUserToken.Domain\obj\Debug\net6.0\AuthUserToken.Domain.AssemblyInfo.cs
+C:\Individuais\AuthUserToken.API\AuthUserToken.Domain\obj\Debug\net6.0\AuthUserToken.Domain.csproj.CoreCompileInputs.cache
+C:\Individuais\AuthUserToken.API\AuthUserToken.Domain\obj\Debug\net6.0\AuthUserToken.Domain.dll
+C:\Individuais\AuthUserToken.API\AuthUserToken.Domain\obj\Debug\net6.0\refint\AuthUserToken.Domain.dll
+C:\Individuais\AuthUserToken.API\AuthUserToken.Domain\obj\Debug\net6.0\AuthUserToken.Domain.pdb
+C:\Individuais\AuthUserToken.API\AuthUserToken.Domain\obj\Debug\net6.0\AuthUserToken.Domain.genruntimeconfig.cache
+C:\Individuais\AuthUserToken.API\AuthUserToken.Domain\obj\Debug\net6.0\ref\AuthUserToken.Domain.dll

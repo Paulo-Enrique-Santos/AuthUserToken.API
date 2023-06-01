@@ -1,4 +1,5 @@
-﻿using AuthUserToken.Domain.Model.Request;
+﻿using AuthUserToken.Domain.Model.Entity;
+using AuthUserToken.Domain.Model.Request;
 using AuthUserToken.Domain.Model.Response;
 using AuthUserToken.Domain.Validations;
 using System;
@@ -11,10 +12,10 @@ namespace AuthUserToken.Domain.Interface.Service
 {
     public interface IUserService
     {
-        Task<ResultService<UserResponse>> RegisterUserAsync(UserRegisterRequest request);
-        Task<ResultService<UserLoginResponse>> LoginUserAsync(UserLoginRequest request);
-        Task<ResultService<string>> UpdatePasswordAsync(UserForgotPasswordRequest request);
-        Task<ResultService<UserResponse>> GetUserByIdAsync(int idUser);
-        Task<ResultService<string>> DeleteUserByIdAsync(int idUser);
+        Task<UserResponse> RegisterUserAsync(UserRegisterRequest request);
+        Task<UserLoginResponse> LoginUserAsync(UserLoginRequest request);
+        Task<GenericResponse> UpdatePasswordAsync(string idUser, string password);
+        Task<User> GetUserByIdAsync(string idUser);
+        Task<GenericResponse> DeleteUserByIdAsync(string idUser);
     }
 }

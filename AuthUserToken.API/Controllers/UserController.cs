@@ -1,12 +1,14 @@
 ﻿using AuthUserToken.Domain.Interface.Service;
+using AuthUserToken.Domain.Model.Entity;
 using AuthUserToken.Domain.Model.Request;
 using AuthUserToken.Domain.Model.Response;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json.Linq;
 
 namespace AuthUserToken.API.Controllers
 {
-    [Microsoft.AspNetCore.Mvc.Route("/Usuarios/")]
+    [Microsoft.AspNetCore.Mvc.Route("/users/")]
     [ApiController]
     public class UserController : ControllerBase
     {
@@ -18,96 +20,55 @@ namespace AuthUserToken.API.Controllers
         }
 
         /// <summary>
-        /// Cadastra um novo usuário
+        /// Cadastra um novo usuário.
         /// </summary>
         [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(UserResponse))]
-        [ProducesResponseType(StatusCodes.Status409Conflict, Type = typeof(string))]
-        [ProducesResponseType(StatusCodes.Status500InternalServerError, Type = typeof(string))]
+        [ProducesResponseType(StatusCodes.Status409Conflict, Type = typeof(GenericResponse))]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError, Type = typeof(GenericResponse))]
         [Microsoft.AspNetCore.Mvc.HttpPost]
-        public async Task<ActionResult> RegisterUser([Microsoft.AspNetCore.Mvc.FromBody] UserRegisterRequest request)
-        {
-            var response = await _userService.RegisterUserAsync(request);
-
-            if (!response.IsSuccess)
-                return StatusCode(response.StatusCode, response.Message);
-
-            return StatusCode(response.StatusCode, response.Data);
-        }
+        public async Task<ActionResult> RegisterUser([Microsoft.AspNetCore.Mvc.FromBody] UserRegisterRequest request) =>
+            Ok(await _userService.RegisterUserAsync(request));
 
         /// <summary>
         /// Validar login
         /// </summary>
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(UserLoginResponse))]
-        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
-        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        [Microsoft.AspNetCore.Mvc.HttpPost("Login")]
-        public async Task<ActionResult> LoginUser([Microsoft.AspNetCore.Mvc.FromBody] UserLoginRequest request)
-        {
-            var response = await _userService.LoginUserAsync(request);
-
-            if (!response.IsSuccess)
-                return StatusCode(response.StatusCode, response.Message);
-
-            return StatusCode(response.StatusCode, response.Data);
-        }
+        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(GenericResponse))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(GenericResponse))]
+        [Microsoft.AspNetCore.Mvc.HttpPost("login")]
+        public async Task<ActionResult> LoginUser([Microsoft.AspNetCore.Mvc.FromBody] UserLoginRequest request) => 
+            Ok(await _userService.LoginUserAsync(request));
 
         /// <summary>
-        /// Busca um usuário por id
+        /// Busca informações detalhadas do usuário
         /// </summary>
-        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(UserResponse))]
-        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
-        [Microsoft.AspNetCore.Mvc.HttpGet("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(User))]
+        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(GenericResponse))]
+        [Microsoft.AspNetCore.Mvc.HttpGet("details")]
         [Authorize]
-        public async Task<ActionResult> GetUserById([Microsoft.AspNetCore.Mvc.FromRoute] int id)
-        {
-            var response = await _userService.GetUserByIdAsync(id);
-
-            if (!response.IsSuccess)
-                return StatusCode(response.StatusCode, response.Message);
-
-            return StatusCode(response.StatusCode, response.Data);
-        }
+        public async Task<ActionResult> GetUserById() =>
+            Ok(await _userService.GetUserByIdAsync(User.FindFirst("Id")?.Value));
 
         /// <summary>
-        /// Atualiza a senha de um usuário
+        /// Atualiza a senha do usuário
         /// </summary>
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(UserLoginResponse))]
-        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
-        [ProducesResponseType(StatusCodes.Status500InternalServerError, Type = typeof(string))]
-        [Microsoft.AspNetCore.Mvc.HttpPatch("{id}")]
-        public async Task<ActionResult> UpdateUserPassword([Microsoft.AspNetCore.Mvc.FromRoute] int id, [Microsoft.AspNetCore.Mvc.FromBody] string password)
-        {
-            var request = new UserForgotPasswordRequest 
-            {
-                IdUser = id,  
-                Password = password 
-            };
-
-            var response = await _userService.UpdatePasswordAsync(request);
-
-            if (!response.IsSuccess)
-                return StatusCode(response.StatusCode, response.Message);
-
-            return StatusCode(response.StatusCode, response.Data);
-        }
+        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(GenericResponse))]
+        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(GenericResponse))]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError, Type = typeof(GenericResponse))]
+        [Microsoft.AspNetCore.Mvc.HttpPatch("update-password")]
+        public async Task<ActionResult> UpdateUserPassword([Microsoft.AspNetCore.Mvc.FromBody] string password) =>
+            Ok(await _userService.UpdatePasswordAsync(User.FindFirst("Id")?.Value, password));
 
         /// <summary>
         /// Deleta um usuário por id
         /// </summary>
-        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(string))]
-        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
-        [ProducesResponseType(StatusCodes.Status500InternalServerError, Type = typeof(string))]
-        [Microsoft.AspNetCore.Mvc.HttpDelete("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(GenericResponse))]
+        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(GenericResponse))]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError, Type = typeof(GenericResponse))]
+        [Microsoft.AspNetCore.Mvc.HttpDelete]
         [Authorize]
-        public async Task<ActionResult> DeleteUserById([Microsoft.AspNetCore.Mvc.FromRoute] int id)
-        {
-            var response = await _userService.DeleteUserByIdAsync(id);
-
-            if (!response.IsSuccess)
-                return StatusCode(response.StatusCode, response.Message);
-
-            return StatusCode(response.StatusCode, response.Data);
-        }
+        public async Task<ActionResult> DeleteUserById() =>
+            Ok(await _userService.DeleteUserByIdAsync(User.FindFirst("Id")?.Value));
     }
 }

@@ -1,10 +1,12 @@
-﻿using AuthUserToken.Domain.Interface.Authentication;
+﻿using AuthUserToken.Domain.Exceptions;
+using AuthUserToken.Domain.Interface.Authentication;
 using AuthUserToken.Domain.Interface.Repository;
 using AuthUserToken.Domain.Interface.Service;
 using AuthUserToken.Domain.Model.Entity;
 using AuthUserToken.Domain.Model.Request;
 using AuthUserToken.Domain.Model.Response;
 using AuthUserToken.Domain.Validations;
+using Newtonsoft.Json.Linq;
 using System.Net;
 
 namespace AuthUserToken.Domain.Serivce
@@ -19,95 +21,99 @@ namespace AuthUserToken.Domain.Serivce
             _tokenGenerator = tokenGenerator;
         }
 
-        public async Task<ResultService<string>> DeleteUserByIdAsync(int idUser)
+        public async Task<GenericResponse> DeleteUserByIdAsync(string idUser)
         {
-            var user = await _userRepository.GetUserByIdAsync(idUser);
+            int.TryParse(idUser, out int id);
+
+            var user = await _userRepository.GetUserByIdAsync(id);
 
             if (user == null)
-                return ResultService.Fail<string>((int) HttpStatusCode.NotFound, "Usuário não encontrado");
+                throw new NotFoundException("Usuário não encontrado!");
 
             var response = await _userRepository.DeleteUserAsync(user);
 
             if (response == null)
-                return ResultService.Fail<string>((int) HttpStatusCode.InternalServerError, "Ocorreu um erro interno");
+                throw new InternalServerErrorException("Problemas para deletar usuário, tente novamente!");
 
-            return ResultService.Ok<string>((int) HttpStatusCode.OK, "Usuário deletado com sucesso!");
+            return new GenericResponse("Conta excluida com sucesso!");
         }
 
-        public async Task<ResultService<UserResponse>> GetUserByIdAsync(int idUser)
+        public async Task<User> GetUserByIdAsync(string idUser)
         {
-            var user = await _userRepository.GetUserByIdAsync(idUser);
+            int.TryParse(idUser, out int id);
 
-            if (user == null)
-                return ResultService.Fail<UserResponse>((int) HttpStatusCode.NotFound, "Usuário não encontrado");
+            var response = await _userRepository.GetUserByIdAsync(id);
 
-            var response = new UserResponse(user.IdUser, user.Name, user.NickName);
+            if (response == null)
+                throw new NotFoundException("Usuário não encontrado!");
 
-            return ResultService.Ok<UserResponse>((int) HttpStatusCode.OK, response);
+            return response;
         }
 
-        public async Task<ResultService<UserLoginResponse>> LoginUserAsync(UserLoginRequest request)
+        public async Task<UserLoginResponse> LoginUserAsync(UserLoginRequest request)
         {
             var user = await _userRepository.GetUserByEmailAsync(request.Email);
 
             if (user == null)
-                return ResultService.Fail<UserLoginResponse>((int)HttpStatusCode.NotFound, "Email incorreto!");
+                throw new NotFoundException("Email não encontrado!");
 
             if (!user.Password.Equals(request.Password))
-                return ResultService.Fail<UserLoginResponse>((int)HttpStatusCode.BadRequest, "Senha incorreta!");
+                throw new BadRequestException("Senha incorreta!");
 
             var token = _tokenGenerator.TokenGenerator(user);
 
-            var response = new UserLoginResponse(user.IdUser, user.Name, user.NickName, token);
+            var response = new UserLoginResponse(user, token);
 
-            return ResultService.Ok<UserLoginResponse>((int)HttpStatusCode.OK, response);
+            return response;
         }
 
-        public async Task<ResultService<UserResponse>> RegisterUserAsync(UserRegisterRequest request)
+        public async Task<UserResponse> RegisterUserAsync(UserRegisterRequest request)
         {
             if (request == null)
-                return ResultService.Fail<UserResponse>((int) HttpStatusCode.BadRequest, "Os dados do usuario devem ser informados!");
+                throw new BadRequestException("Os dados do usuario devem ser informados!");
 
             var user = new User(request.Name, request.NickName, request.Email, request.Password);
 
             var validateEmail = await _userRepository.GetUserByEmailAsync(request.Email);
 
             if (validateEmail != null)
-                return ResultService.Fail<UserResponse>((int) HttpStatusCode.Conflict, "Esse email já está em uso!");
+                throw new ConflictException("Email já cadastrado no nosso sistema!");
 
             var validateNick = await _userRepository.GetUserByNickNameAsync(request.NickName);
 
             if (validateNick != null)
-                return ResultService.Fail<UserResponse>((int) HttpStatusCode.Conflict, "Esse nickname já está em uso!");
+                throw new ConflictException("Esse nickname já está em uso!");
 
-            var register = await _userRepository.RegisterUserAsync(user);
+            var userRegister = await _userRepository.RegisterUserAsync(user);
 
-            if (register == null)
-                return ResultService.Fail<UserResponse>((int) HttpStatusCode.InternalServerError, "Ocorreu um erro interno");
+            if (userRegister == null)
+                throw new InternalServerErrorException("Problemas para cadastrar usuário, tente novamente!");
 
-            var response = new UserResponse(register.IdUser, register.Name, register.NickName);
+            var response = new UserResponse(userRegister);
 
-            return ResultService.Ok<UserResponse>((int) HttpStatusCode.Created, response);
+            return response;
         }
 
-        public async Task<ResultService<string>> UpdatePasswordAsync(UserForgotPasswordRequest request)
+        public async Task<GenericResponse> UpdatePasswordAsync(string idUser, string password)
         {
-            if (request == null)
-                return ResultService.Fail<string>((int) HttpStatusCode.BadRequest, "Os dados do usuario devem ser informados!");
+            if (password == null)
+                throw new BadRequestException("A senha não pode ser nula!");
 
-            var user = await _userRepository.GetUserByIdAsync(request.IdUser);
+            int.TryParse(idUser, out int id);
+
+            var user = await _userRepository.GetUserByIdAsync(id);
 
             if (user == null)
-                return ResultService.Fail<string>((int) HttpStatusCode.NotFound, "Usuário não encontrado");
+                throw new NotFoundException("Usuário não encontrado!");
 
-            user.Password = request.Password!;
+            user.Password = password;
 
             var response = await _userRepository.UpdateUserAsync(user);
 
             if (response == null)
-                return ResultService.Fail<string>((int) HttpStatusCode.InternalServerError, "Ocorreu um erro interno");
+                throw new InternalServerErrorException("Problemas para atualizar a senha do usuário, tente novamente!");
 
-            return ResultService.Ok<string>((int) HttpStatusCode.OK, "Senha alterada com sucesso!");
+            return new GenericResponse("Senha atualizada com sucesso!");
         }
     }
 }

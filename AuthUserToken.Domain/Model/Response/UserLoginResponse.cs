@@ -1,17 +1,17 @@
-﻿namespace AuthUserToken.Domain.Model.Response
+﻿using AuthUserToken.Domain.Model.Entity;
+
+namespace AuthUserToken.Domain.Model.Response
 {
     public class UserLoginResponse
     {
-        public int IdUser { get; set; }
         public string? Name { get; set; }
         public string? NickName { get; set; }
         public dynamic Token { get; set; }
 
-        public UserLoginResponse(int idUser, string name, string nickName, dynamic token)
+        public UserLoginResponse(User user, dynamic token)
         {
-            IdUser = idUser;
-            Name = name;
-            NickName = nickName;
+            Name = user.Name;
+            NickName = user.NickName;
             Token = token;
         }
 

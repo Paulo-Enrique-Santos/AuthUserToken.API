@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\paulo.filho\\Desktop\\Individuais\\AuthUserToken.API\\AuthUserToken.Domain\\AuthUserToken.Domain.csproj": {}
+    "C:\\Individuais\\AuthUserToken.API\\AuthUserToken.Domain\\AuthUserToken.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\paulo.filho\\Desktop\\Individuais\\AuthUserToken.API\\AuthUserToken.Domain\\AuthUserToken.Domain.csproj": {
+    "C:\\Individuais\\AuthUserToken.API\\AuthUserToken.Domain\\AuthUserToken.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\paulo.filho\\Desktop\\Individuais\\AuthUserToken.API\\AuthUserToken.Domain\\AuthUserToken.Domain.csproj",
+        "projectUniqueName": "C:\\Individuais\\AuthUserToken.API\\AuthUserToken.Domain\\AuthUserToken.Domain.csproj",
         "projectName": "AuthUserToken.Domain",
-        "projectPath": "C:\\Users\\paulo.filho\\Desktop\\Individuais\\AuthUserToken.API\\AuthUserToken.Domain\\AuthUserToken.Domain.csproj",
+        "projectPath": "C:\\Individuais\\AuthUserToken.API\\AuthUserToken.Domain\\AuthUserToken.Domain.csproj",
         "packagesPath": "C:\\Users\\paulo.filho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\paulo.filho\\Desktop\\Individuais\\AuthUserToken.API\\AuthUserToken.Domain\\obj\\",
+        "outputPath": "C:\\Individuais\\AuthUserToken.API\\AuthUserToken.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\paulo.filho\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -21,7 +21,6 @@
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://pkgs.dev.azure.com/geniallabs/_packaging/geniallabs/nuget/v3/index.json": {}
@@ -103,7 +102,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

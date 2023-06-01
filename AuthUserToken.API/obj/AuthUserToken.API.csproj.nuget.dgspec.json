@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\paulo.filho\\Desktop\\Individuais\\AuthUserToken.API\\AuthUserToken.API\\AuthUserToken.API.csproj": {}
+    "C:\\Individuais\\AuthUserToken.API\\AuthUserToken.API\\AuthUserToken.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\paulo.filho\\Desktop\\Individuais\\AuthUserToken.API\\AuthUserToken.API\\AuthUserToken.API.csproj": {
+    "C:\\Individuais\\AuthUserToken.API\\AuthUserToken.API\\AuthUserToken.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\paulo.filho\\Desktop\\Individuais\\AuthUserToken.API\\AuthUserToken.API\\AuthUserToken.API.csproj",
+        "projectUniqueName": "C:\\Individuais\\AuthUserToken.API\\AuthUserToken.API\\AuthUserToken.API.csproj",
         "projectName": "AuthUserToken.API",
-        "projectPath": "C:\\Users\\paulo.filho\\Desktop\\Individuais\\AuthUserToken.API\\AuthUserToken.API\\AuthUserToken.API.csproj",
+        "projectPath": "C:\\Individuais\\AuthUserToken.API\\AuthUserToken.API\\AuthUserToken.API.csproj",
         "packagesPath": "C:\\Users\\paulo.filho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\paulo.filho\\Desktop\\Individuais\\AuthUserToken.API\\AuthUserToken.API\\obj\\",
+        "outputPath": "C:\\Individuais\\AuthUserToken.API\\AuthUserToken.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\paulo.filho\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -22,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://pkgs.dev.azure.com/geniallabs/_packaging/geniallabs/nuget/v3/index.json": {}
         },
@@ -30,8 +29,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\paulo.filho\\Desktop\\Individuais\\AuthUserToken.API\\AuthUserToken.Infrastructure\\AuthUserToken.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\paulo.filho\\Desktop\\Individuais\\AuthUserToken.API\\AuthUserToken.Infrastructure\\AuthUserToken.Infrastructure.csproj"
+              "C:\\Individuais\\AuthUserToken.API\\AuthUserToken.Infrastructure\\AuthUserToken.Infrastructure.csproj": {
+                "projectPath": "C:\\Individuais\\AuthUserToken.API\\AuthUserToken.Infrastructure\\AuthUserToken.Infrastructure.csproj"
               }
             }
           }
@@ -98,18 +97,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\paulo.filho\\Desktop\\Individuais\\AuthUserToken.API\\AuthUserToken.Domain\\AuthUserToken.Domain.csproj": {
+    "C:\\Individuais\\AuthUserToken.API\\AuthUserToken.Domain\\AuthUserToken.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\paulo.filho\\Desktop\\Individuais\\AuthUserToken.API\\AuthUserToken.Domain\\AuthUserToken.Domain.csproj",
+        "projectUniqueName": "C:\\Individuais\\AuthUserToken.API\\AuthUserToken.Domain\\AuthUserToken.Domain.csproj",
         "projectName": "AuthUserToken.Domain",
-        "projectPath": "C:\\Users\\paulo.filho\\Desktop\\Individuais\\AuthUserToken.API\\AuthUserToken.Domain\\AuthUserToken.Domain.csproj",
+        "projectPath": "C:\\Individuais\\AuthUserToken.API\\AuthUserToken.Domain\\AuthUserToken.Domain.csproj",
         "packagesPath": "C:\\Users\\paulo.filho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\paulo.filho\\Desktop\\Individuais\\AuthUserToken.API\\AuthUserToken.Domain\\obj\\",
+        "outputPath": "C:\\Individuais\\AuthUserToken.API\\AuthUserToken.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\paulo.filho\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -119,7 +118,6 @@
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://pkgs.dev.azure.com/geniallabs/_packaging/geniallabs/nuget/v3/index.json": {}
@@ -201,18 +199,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\paulo.filho\\Desktop\\Individuais\\AuthUserToken.API\\AuthUserToken.Infrastructure\\AuthUserToken.Infrastructure.csproj": {
+    "C:\\Individuais\\AuthUserToken.API\\AuthUserToken.Infrastructure\\AuthUserToken.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\paulo.filho\\Desktop\\Individuais\\AuthUserToken.API\\AuthUserToken.Infrastructure\\AuthUserToken.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Individuais\\AuthUserToken.API\\AuthUserToken.Infrastructure\\AuthUserToken.Infrastructure.csproj",
         "projectName": "AuthUserToken.Infrastructure",
-        "projectPath": "C:\\Users\\paulo.filho\\Desktop\\Individuais\\AuthUserToken.API\\AuthUserToken.Infrastructure\\AuthUserToken.Infrastructure.csproj",
+        "projectPath": "C:\\Individuais\\AuthUserToken.API\\AuthUserToken.Infrastructure\\AuthUserToken.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\paulo.filho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\paulo.filho\\Desktop\\Individuais\\AuthUserToken.API\\AuthUserToken.Infrastructure\\obj\\",
+        "outputPath": "C:\\Individuais\\AuthUserToken.API\\AuthUserToken.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\paulo.filho\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -223,7 +221,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://pkgs.dev.azure.com/geniallabs/_packaging/geniallabs/nuget/v3/index.json": {}
         },
@@ -231,8 +228,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\paulo.filho\\Desktop\\Individuais\\AuthUserToken.API\\AuthUserToken.Domain\\AuthUserToken.Domain.csproj": {
-                "projectPath": "C:\\Users\\paulo.filho\\Desktop\\Individuais\\AuthUserToken.API\\AuthUserToken.Domain\\AuthUserToken.Domain.csproj"
+              "C:\\Individuais\\AuthUserToken.API\\AuthUserToken.Domain\\AuthUserToken.Domain.csproj": {
+                "projectPath": "C:\\Individuais\\AuthUserToken.API\\AuthUserToken.Domain\\AuthUserToken.Domain.csproj"
               }
             }
           }
@@ -271,6 +268,10 @@
               "target": "Package",
               "version": "[7.0.4, )"
             },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
               "version": "[6.29.0, )"
@@ -292,7 +293,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
