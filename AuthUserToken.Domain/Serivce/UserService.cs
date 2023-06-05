@@ -52,10 +52,11 @@ namespace AuthUserToken.Domain.Serivce
 
         public async Task<UserLoginResponse> LoginUserAsync(UserLoginRequest request)
         {
-            var user = await _userRepository.GetUserByEmailAsync(request.Email);
+            var user = await _userRepository.GetUserByEmailOrNickNameAsync(request.EmailOrNickName);
+
 
             if (user == null)
-                throw new NotFoundException("Email não encontrado!");
+                throw new NotFoundException("Email ou NickName não encontrado!");
 
             if (!user.Password.Equals(request.Password))
                 throw new BadRequestException("Senha incorreta!");

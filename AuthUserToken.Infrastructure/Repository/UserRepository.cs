@@ -20,11 +20,6 @@ namespace AuthUserToken.Infrastructure.Repository
             _appDbContext = appDbContext;
         }
 
-        public async Task<User?> LoginUserAsync(UserLoginRequest userLoginRequest)
-        {
-            return await _appDbContext.User.FirstOrDefaultAsync(x => x.Email.Equals(userLoginRequest.Email) && x.Password.Equals(userLoginRequest.Password));
-        }
-
         public async Task<User> RegisterUserAsync(User user)
         {
             _appDbContext.User.Add(user);
@@ -42,6 +37,11 @@ namespace AuthUserToken.Infrastructure.Repository
             _appDbContext.User.Update(user);
             await _appDbContext.SaveChangesAsync();
             return user;
+        }
+
+        public async Task<User?> GetUserByEmailOrNickNameAsync(string emailOrNickName)
+        {
+            return await _appDbContext.User.FirstOrDefaultAsync(x => x.Email.Equals(emailOrNickName) || x.NickName.Equals(emailOrNickName));
         }
 
         public async Task<User?> GetUserByEmailAsync(string email)
