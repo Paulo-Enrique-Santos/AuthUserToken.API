@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HomeBrokerSimulator.API</name>
+    </assembly>
+    <members>
+        <member name="M:HomeBrokerSimulator.API.Controllers.UserController.RegisterUser(HomeBrokerSimulator.Domain.Model.Request.UserRegisterRequest)">
+            <summary>
+            Cadastra um novo usuário.
+            </summary>
+        </member>
+        <member name="M:HomeBrokerSimulator.API.Controllers.UserController.LoginUser(HomeBrokerSimulator.Domain.Model.Request.UserLoginRequest)">
+            <summary>
+            Validar login
+            </summary>
+        </member>
+        <member name="M:HomeBrokerSimulator.API.Controllers.UserController.GetUserById">
+            <summary>
+            Busca informações detalhadas do usuário
+            </summary>
+        </member>
+        <member name="M:HomeBrokerSimulator.API.Controllers.UserController.UpdateUserPassword(System.String)">
+            <summary>
+            Atualiza a senha do usuário
+            </summary>
+        </member>
+        <member name="M:HomeBrokerSimulator.API.Controllers.UserController.DeleteUserById">
+            <summary>
+            Deleta um usuário por id
+            </summary>
+        </member>
+    </members>
+</doc>

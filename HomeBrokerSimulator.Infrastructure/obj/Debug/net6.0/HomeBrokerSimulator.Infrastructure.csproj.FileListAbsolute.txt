@@ -1,0 +1,17 @@
+C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.Infrastructure\bin\Debug\net6.0\HomeBrokerSimulator.Infrastructure.deps.json
+C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.Infrastructure\bin\Debug\net6.0\HomeBrokerSimulator.Infrastructure.runtimeconfig.json
+C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.Infrastructure\bin\Debug\net6.0\HomeBrokerSimulator.Infrastructure.dll
+C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.Infrastructure\bin\Debug\net6.0\HomeBrokerSimulator.Infrastructure.pdb
+C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.Infrastructure\bin\Debug\net6.0\HomeBrokerSimulator.Domain.dll
+C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.Infrastructure\bin\Debug\net6.0\HomeBrokerSimulator.Domain.pdb
+C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.Infrastructure\obj\Debug\net6.0\HomeBrokerSimulator.Infrastructure.csproj.AssemblyReference.cache
+C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.Infrastructure\obj\Debug\net6.0\HomeBrokerSimulator.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.Infrastructure\obj\Debug\net6.0\HomeBrokerSimulator.Infrastructure.AssemblyInfoInputs.cache
+C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.Infrastructure\obj\Debug\net6.0\HomeBrokerSimulator.Infrastructure.AssemblyInfo.cs
+C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.Infrastructure\obj\Debug\net6.0\HomeBrokerSimulator.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.Infrastructure\obj\Debug\net6.0\HomeBrokerSimulator.Infrastructure.csproj.CopyComplete
+C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.Infrastructure\obj\Debug\net6.0\HomeBrokerSimulator.Infrastructure.dll
+C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.Infrastructure\obj\Debug\net6.0\refint\HomeBrokerSimulator.Infrastructure.dll
+C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.Infrastructure\obj\Debug\net6.0\HomeBrokerSimulator.Infrastructure.pdb
+C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.Infrastructure\obj\Debug\net6.0\HomeBrokerSimulator.Infrastructure.genruntimeconfig.cache
+C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.Infrastructure\obj\Debug\net6.0\ref\HomeBrokerSimulator.Infrastructure.dll
