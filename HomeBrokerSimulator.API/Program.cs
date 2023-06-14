@@ -1,4 +1,4 @@
-using HomeBrokerSimulator.Infrastructure.DependencyInjection;
+using HomeBrokerSimulator.API.Configuration.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 

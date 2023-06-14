@@ -26,6 +26,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\HomeBrokerSimulator.Infrastructure\HomeBrokerSimulator.Infrastructure.csproj" />
+    <ProjectReference Include="..\HomeBrokerSimulator.Service\HomeBrokerSimulator.Service.csproj" />
   </ItemGroup>
 
 </Project>

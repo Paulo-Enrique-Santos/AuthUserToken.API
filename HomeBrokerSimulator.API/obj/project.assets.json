@@ -2746,6 +2746,20 @@
         "runtime": {
           "bin/placeholder/HomeBrokerSimulator.Infrastructure.dll": {}
         }
+      },
+      "HomeBrokerSimulator.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "HomeBrokerSimulator.Domain": "1.0.0",
+          "HomeBrokerSimulator.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HomeBrokerSimulator.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HomeBrokerSimulator.Service.dll": {}
+        }
       }
     }
   },
@@ -8021,11 +8035,17 @@
       "type": "project",
       "path": "../HomeBrokerSimulator.Infrastructure/HomeBrokerSimulator.Infrastructure.csproj",
       "msbuildProject": "../HomeBrokerSimulator.Infrastructure/HomeBrokerSimulator.Infrastructure.csproj"
+    },
+    "HomeBrokerSimulator.Service/1.0.0": {
+      "type": "project",
+      "path": "../HomeBrokerSimulator.Service/HomeBrokerSimulator.Service.csproj",
+      "msbuildProject": "../HomeBrokerSimulator.Service/HomeBrokerSimulator.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "HomeBrokerSimulator.Infrastructure >= 1.0.0",
+      "HomeBrokerSimulator.Service >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.4",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.4",
@@ -8065,6 +8085,9 @@
           "projectReferences": {
             "C:\\Individuais\\HomeBrokerSimulator.API\\HomeBrokerSimulator.Infrastructure\\HomeBrokerSimulator.Infrastructure.csproj": {
               "projectPath": "C:\\Individuais\\HomeBrokerSimulator.API\\HomeBrokerSimulator.Infrastructure\\HomeBrokerSimulator.Infrastructure.csproj"
+            },
+            "C:\\Individuais\\HomeBrokerSimulator.API\\HomeBrokerSimulator.Service\\HomeBrokerSimulator.Service.csproj": {
+              "projectPath": "C:\\Individuais\\HomeBrokerSimulator.API\\HomeBrokerSimulator.Service\\HomeBrokerSimulator.Service.csproj"
             }
           }
         }

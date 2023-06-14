@@ -97,3 +97,5 @@ C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.API\obj\Debug\net6.0\
 C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.API\obj\Debug\net6.0\HomeBrokerSimulator.API.pdb
 C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.API\obj\Debug\net6.0\HomeBrokerSimulator.API.genruntimeconfig.cache
 C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.API\obj\Debug\net6.0\ref\HomeBrokerSimulator.API.dll
+C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.API\bin\Debug\net6.0\HomeBrokerSimulator.Service.dll
+C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.API\bin\Debug\net6.0\HomeBrokerSimulator.Service.pdb

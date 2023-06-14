@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeBrokerSimulator.Domain"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeBrokerSimulator.Infrastructure", "HomeBrokerSimulator.Infrastructure\HomeBrokerSimulator.Infrastructure.csproj", "{ACA42C5F-CAE3-469C-AC0C-74F0BEDD4856}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeBrokerSimulator.Service", "HomeBrokerSimulator.Service\HomeBrokerSimulator.Service.csproj", "{C62DDC80-EA19-4172-A77E-BADB9E0FB5E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{ACA42C5F-CAE3-469C-AC0C-74F0BEDD4856}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACA42C5F-CAE3-469C-AC0C-74F0BEDD4856}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ACA42C5F-CAE3-469C-AC0C-74F0BEDD4856}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C62DDC80-EA19-4172-A77E-BADB9E0FB5E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C62DDC80-EA19-4172-A77E-BADB9E0FB5E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C62DDC80-EA19-4172-A77E-BADB9E0FB5E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C62DDC80-EA19-4172-A77E-BADB9E0FB5E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

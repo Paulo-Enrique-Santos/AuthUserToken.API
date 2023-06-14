@@ -1,6 +1,7 @@
 ﻿using HomeBrokerSimulator.Domain.Validations;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace HomeBrokerSimulator.Domain.Model.Entity
 {
@@ -14,6 +15,8 @@ namespace HomeBrokerSimulator.Domain.Model.Entity
         public string NickName { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
+        public decimal Balance { get; set; }
+        public byte[] Image { get; set; }
 
         public User(string name, string nickName, string email, string password)
         {
@@ -31,6 +34,8 @@ namespace HomeBrokerSimulator.Domain.Model.Entity
             NickName = nickName;
             Email = email;
             Password = password;
+            Balance = 0;
+            Image = new byte[] {};
         }
     }
 }
