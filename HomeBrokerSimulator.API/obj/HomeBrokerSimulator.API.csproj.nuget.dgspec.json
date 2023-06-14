@@ -31,6 +31,9 @@
             "projectReferences": {
               "C:\\Individuais\\HomeBrokerSimulator.API\\HomeBrokerSimulator.Infrastructure\\HomeBrokerSimulator.Infrastructure.csproj": {
                 "projectPath": "C:\\Individuais\\HomeBrokerSimulator.API\\HomeBrokerSimulator.Infrastructure\\HomeBrokerSimulator.Infrastructure.csproj"
+              },
+              "C:\\Individuais\\HomeBrokerSimulator.API\\HomeBrokerSimulator.Service\\HomeBrokerSimulator.Service.csproj": {
+                "projectPath": "C:\\Individuais\\HomeBrokerSimulator.API\\HomeBrokerSimulator.Service\\HomeBrokerSimulator.Service.csproj"
               }
             }
           }
@@ -277,6 +280,69 @@
               "version": "[6.29.0, )"
             }
           },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Individuais\\HomeBrokerSimulator.API\\HomeBrokerSimulator.Service\\HomeBrokerSimulator.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Individuais\\HomeBrokerSimulator.API\\HomeBrokerSimulator.Service\\HomeBrokerSimulator.Service.csproj",
+        "projectName": "HomeBrokerSimulator.Service",
+        "projectPath": "C:\\Individuais\\HomeBrokerSimulator.API\\HomeBrokerSimulator.Service\\HomeBrokerSimulator.Service.csproj",
+        "packagesPath": "C:\\Users\\paulo.filho\\.nuget\\packages\\",
+        "outputPath": "C:\\Individuais\\HomeBrokerSimulator.API\\HomeBrokerSimulator.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\paulo.filho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/geniallabs/_packaging/geniallabs/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Individuais\\HomeBrokerSimulator.API\\HomeBrokerSimulator.Domain\\HomeBrokerSimulator.Domain.csproj": {
+                "projectPath": "C:\\Individuais\\HomeBrokerSimulator.API\\HomeBrokerSimulator.Domain\\HomeBrokerSimulator.Domain.csproj"
+              },
+              "C:\\Individuais\\HomeBrokerSimulator.API\\HomeBrokerSimulator.Infrastructure\\HomeBrokerSimulator.Infrastructure.csproj": {
+                "projectPath": "C:\\Individuais\\HomeBrokerSimulator.API\\HomeBrokerSimulator.Infrastructure\\HomeBrokerSimulator.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
           "imports": [
             "net461",
             "net462",

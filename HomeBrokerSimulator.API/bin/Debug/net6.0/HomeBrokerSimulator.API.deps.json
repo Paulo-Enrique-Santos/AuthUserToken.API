@@ -9,6 +9,7 @@
       "HomeBrokerSimulator.API/1.0.0": {
         "dependencies": {
           "HomeBrokerSimulator.Infrastructure": "1.0.0",
+          "HomeBrokerSimulator.Service": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.4",
           "Microsoft.EntityFrameworkCore.Design": "7.0.4",
@@ -1548,6 +1549,15 @@
         "runtime": {
           "HomeBrokerSimulator.Infrastructure.dll": {}
         }
+      },
+      "HomeBrokerSimulator.Service/1.0.0": {
+        "dependencies": {
+          "HomeBrokerSimulator.Domain": "1.0.0",
+          "HomeBrokerSimulator.Infrastructure": "1.0.0"
+        },
+        "runtime": {
+          "HomeBrokerSimulator.Service.dll": {}
+        }
       }
     }
   },
@@ -2627,6 +2637,11 @@
       "sha512": ""
     },
     "HomeBrokerSimulator.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HomeBrokerSimulator.Service/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

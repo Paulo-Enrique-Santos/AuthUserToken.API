@@ -1,10 +1,9 @@
-﻿using HomeBrokerSimulator.Domain.Interface.Service;
-using HomeBrokerSimulator.Domain.Model.Entity;
+﻿using HomeBrokerSimulator.Domain.Model.Entity;
 using HomeBrokerSimulator.Domain.Model.Request;
 using HomeBrokerSimulator.Domain.Model.Response;
+using HomeBrokerSimulator.Service.Interface;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json.Linq;
 
 namespace HomeBrokerSimulator.API.Controllers
 {
@@ -27,10 +26,10 @@ namespace HomeBrokerSimulator.API.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError, Type = typeof(GenericResponse))]
         [Microsoft.AspNetCore.Mvc.HttpPost]
         public async Task<ActionResult> RegisterUser([Microsoft.AspNetCore.Mvc.FromBody] UserRegisterRequest request) =>
-            Ok(await _userService.RegisterUserAsync(request));
+            Created(nameof(User), await _userService.RegisterUserAsync(request));
 
         /// <summary>
-        /// Validar login
+        /// Realizar login na plataforma
         /// </summary>
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(UserLoginResponse))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(GenericResponse))]
@@ -56,9 +55,9 @@ namespace HomeBrokerSimulator.API.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(GenericResponse))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(GenericResponse))]
         [ProducesResponseType(StatusCodes.Status500InternalServerError, Type = typeof(GenericResponse))]
-        [Microsoft.AspNetCore.Mvc.HttpPatch("update-password")]
-        public async Task<ActionResult> UpdateUserPassword([Microsoft.AspNetCore.Mvc.FromBody] string password) =>
-            Ok(await _userService.UpdatePasswordAsync(User.FindFirst("Id")?.Value, password));
+        [Microsoft.AspNetCore.Mvc.HttpPatch("upload-image")]
+        public async Task<ActionResult> UpdateUserImage([Microsoft.AspNetCore.Mvc.FromQuery] IFormFile image) =>
+            Ok(await _userService.UpdateImageAsync(User.FindFirst("Id")?.Value, image));
 
         /// <summary>
         /// Deleta a conta do usuário

@@ -6,12 +6,12 @@
     <members>
         <member name="M:HomeBrokerSimulator.API.Controllers.UserController.RegisterUser(HomeBrokerSimulator.Domain.Model.Request.UserRegisterRequest)">
             <summary>
-            Cadastra um novo usuário.
+            Cadastra um novo usuário
             </summary>
         </member>
         <member name="M:HomeBrokerSimulator.API.Controllers.UserController.LoginUser(HomeBrokerSimulator.Domain.Model.Request.UserLoginRequest)">
             <summary>
-            Validar login
+            Realizar login na plataforma
             </summary>
         </member>
         <member name="M:HomeBrokerSimulator.API.Controllers.UserController.GetUserById">
@@ -26,7 +26,7 @@
         </member>
         <member name="M:HomeBrokerSimulator.API.Controllers.UserController.DeleteUserById">
             <summary>
-            Deleta um usuário por id
+            Deleta a conta do usuário
             </summary>
         </member>
     </members>

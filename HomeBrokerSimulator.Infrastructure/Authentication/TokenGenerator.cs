@@ -1,5 +1,5 @@
-﻿using HomeBrokerSimulator.Domain.Interface.Authentication;
-using HomeBrokerSimulator.Domain.Model.Entity;
+﻿using HomeBrokerSimulator.Domain.Model.Entity;
+using HomeBrokerSimulator.Infrastructure.Interface.Authentication;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -18,7 +18,7 @@ namespace HomeBrokerSimulator.Infrastructure.Authentication
             };
 
             var expires = DateTime.Now.AddMinutes(1);
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("ProjetoAuthentication.API"));
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("HomeBrokerSimulator1.2.3.4.5.6"));
 
             var tokenData = new JwtSecurityToken(
                 signingCredentials: new SigningCredentials(key, SecurityAlgorithms.HmacSha256Signature),
