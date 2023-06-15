@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 is_global = true
 build_property.TargetFramework = net6.0
 build_property.TargetPlatformMinVersion = 
@@ -9,3 +10,16 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HomeBrokerSimulator.Service
 build_property.ProjectDir = C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.Service\
+=======
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = HomeBrokerSimulator.Service
+build_property.ProjectDir = C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.Service\
+>>>>>>> 8c1722fb7e54a0ab0ffe4cbc56e972baaecbe9d5

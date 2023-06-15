@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
@@ -12,3 +13,19 @@
   </ItemGroup>
 
 </Project>
+=======
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HomeBrokerSimulator.Domain\HomeBrokerSimulator.Domain.csproj" />
+    <ProjectReference Include="..\HomeBrokerSimulator.Infrastructure\HomeBrokerSimulator.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
+>>>>>>> 8c1722fb7e54a0ab0ffe4cbc56e972baaecbe9d5

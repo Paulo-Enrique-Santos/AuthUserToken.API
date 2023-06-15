@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.Service\obj\Debug\net6.0\HomeBrokerSimulator.Service.csproj.AssemblyReference.cache
 C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.Service\obj\Debug\net6.0\HomeBrokerSimulator.Service.GeneratedMSBuildEditorConfig.editorconfig
 C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.Service\obj\Debug\net6.0\HomeBrokerSimulator.Service.AssemblyInfoInputs.cache
@@ -15,3 +16,22 @@ C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.Service\obj\Debug\net
 C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.Service\obj\Debug\net6.0\ref\HomeBrokerSimulator.Service.dll
 C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.Service\bin\Debug\net6.0\HomeBrokerSimulator.Infrastructure.dll
 C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.Service\bin\Debug\net6.0\HomeBrokerSimulator.Infrastructure.pdb
+=======
+C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.Service\obj\Debug\net6.0\HomeBrokerSimulator.Service.csproj.AssemblyReference.cache
+C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.Service\obj\Debug\net6.0\HomeBrokerSimulator.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.Service\obj\Debug\net6.0\HomeBrokerSimulator.Service.AssemblyInfoInputs.cache
+C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.Service\obj\Debug\net6.0\HomeBrokerSimulator.Service.AssemblyInfo.cs
+C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.Service\obj\Debug\net6.0\HomeBrokerSimulator.Service.csproj.CoreCompileInputs.cache
+C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.Service\bin\Debug\net6.0\HomeBrokerSimulator.Service.deps.json
+C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.Service\bin\Debug\net6.0\HomeBrokerSimulator.Service.dll
+C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.Service\bin\Debug\net6.0\HomeBrokerSimulator.Service.pdb
+C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.Service\bin\Debug\net6.0\HomeBrokerSimulator.Domain.dll
+C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.Service\bin\Debug\net6.0\HomeBrokerSimulator.Domain.pdb
+C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.Service\obj\Debug\net6.0\HomeBrokerSimulator.Service.csproj.CopyComplete
+C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.Service\obj\Debug\net6.0\HomeBrokerSimulator.Service.dll
+C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.Service\obj\Debug\net6.0\refint\HomeBrokerSimulator.Service.dll
+C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.Service\obj\Debug\net6.0\HomeBrokerSimulator.Service.pdb
+C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.Service\obj\Debug\net6.0\ref\HomeBrokerSimulator.Service.dll
+C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.Service\bin\Debug\net6.0\HomeBrokerSimulator.Infrastructure.dll
+C:\Individuais\HomeBrokerSimulator.API\HomeBrokerSimulator.Service\bin\Debug\net6.0\HomeBrokerSimulator.Infrastructure.pdb
+>>>>>>> 8c1722fb7e54a0ab0ffe4cbc56e972baaecbe9d5
